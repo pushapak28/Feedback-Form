@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedBack Form
+    </title>
+
+    <link rel="icon" type="image/png" href="http://www.google.com/s2/u/0/favicons?domain=css-tricks.com">
+
+
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Screenshot -->
+    <script type="text/javascript" src="html2canvas-master/dist/html2canvas.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Your FeedBack!</h1>
+        <!-- form -->
+        <form action="" novalidate id="form">
+            <!-- full name -->
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder='Full Name' name="name" required minlength="3" maxlength="10">
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder='email@address.com' name="email" required>
+            </div>
+            <!-- text box area -->
+            <div class="form-group">
+                <label for="feedback">Message</label><br>
+                <input type="text" id="textmessage" placeholder='Your FeedBack' name="feedback" required>
+            </div>
+            <!-- text box area -->
+
+            <!-- button -->
+            <div class="d-flex form-group">
+                <button href="#" type="button" data-bs-toggle="modal" data-bs-target="#feedback-Modal">
+                    FeedBack</button>
+            </div>
+
+        </form>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="feedback-Modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel"> Send Feedback</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="custom-divider"></div>
+                <div class="modal-body">
+                    <p>Have feedback? We'd love to hear it, but please don't share sensitive information,Have questions?
+                        Try help or support</p>
+                    <div class="checkbox">
+                        <label><input type="checkbox">Include Screenshot</label>
+                    </div>
+                    <hr>
+                    <div class="screenshot"></div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!---SCript--->
+    <script type="text/javascript" src="html2canvas-master/dist/html2canvas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
